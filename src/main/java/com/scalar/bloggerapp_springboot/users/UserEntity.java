@@ -9,8 +9,10 @@ import org.springframework.lang.NonNull;
 @Setter
 @ToString
 @Entity(name = "users")
+@Builder
 @RequiredArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
